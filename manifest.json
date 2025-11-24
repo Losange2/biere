@@ -1,6 +1,7 @@
 {
     "name": "Biere App",
     "short_name": "Biere",
+    "id": "/biere/index.html",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
