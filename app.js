@@ -27,7 +27,7 @@
     }
 
     function loadInitialData() {
-        fetch('https://punkapi.online/v3/beers/?page=1&per_page=10')
+        fetch('https://punkapi.online/v3/beers?page=1&per_page=10')
             .then(response => response.json())
             .then(data => {
                 allbeer = data;
