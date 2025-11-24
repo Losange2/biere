@@ -8,7 +8,7 @@
     request.onupgradeneeded = event => {
         db = event.target.result;
         if (!db.objectStoreNames.contains('beers')) {
-            db.createObjectStore('beers', { keyPath: 'id' });
+            const store = db.createObjectStore('beers', { keyPath: 'id' });
             store.createIndex('name', 'name', { unique: false });
         }
     }

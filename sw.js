@@ -1,9 +1,9 @@
 const ressourceToCache = [
     './',
     './index.html',
-    './ajout.js',
-    './app.js',
-    './style.css',
+    './js/ajout.js',
+    './js/app.js',
+    './css/style.css',
 ];
 
 self.addEventListener('install', function(event) {
