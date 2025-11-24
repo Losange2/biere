@@ -6,5 +6,25 @@
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "description": "Application Biere",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/biere.webp",
+            "type": "image/webp",
+            "sizes": "256x256",
+            "form_factor": "wide"
+        },
+        {
+            "src": "img/biere512webp.webp",
+            "type": "image/webp",
+            "sizes": "512x512",
+            "form_factor": "wide"
+        },
+        {
+            "src": "img/biere192.webp",
+            "type": "image/webp",
+            "sizes": "192x192",
+            "form_factor": "wide"
+        }
+    ]
 }
