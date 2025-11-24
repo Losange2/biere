@@ -11,7 +11,7 @@ if ('serviceWorker' in navigator) {
 
 const ressourceToCache = [
     './',
-    './index.php',
+    './index.html',
     './ajout.js',
     './app.js',
     './styles.css',
