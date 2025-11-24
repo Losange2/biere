@@ -13,7 +13,9 @@
             "type": "image/webp",
             "sizes": "256x256",
             "form_factor": "wide"
-        },
+        }
+    ],
+    "screenshots": [
         {
             "src": "img/biere512webp.webp",
             "type": "image/webp",
@@ -21,10 +23,9 @@
             "form_factor": "wide"
         },
         {
-            "src": "img/biere192.webp",
+            "src": "img/biere512webp.webp",
             "type": "image/webp",
-            "sizes": "192x192",
-            "form_factor": "mobile"
+            "sizes": "512x512"
         }
     ]
 }
