@@ -24,7 +24,7 @@
             "src": "img/biere192.webp",
             "type": "image/webp",
             "sizes": "192x192",
-            "form_factor": "wide"
+            "form_factor": "mobile"
         }
     ]
 }
