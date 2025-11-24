@@ -1,8 +1,10 @@
 {
     "name": "Biere App",
     "short_name": "Biere",
-    "start_url": "index.php",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
+    "description": "Application Biere",
+    "orientation": "portrait"
 }
