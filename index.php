@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Bières</title>
+    <link rel="stylesheet" href="style.css">
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="rajout.php">Rajout de bières</a>
+    </nav>
+</head>
+<body>
+    <h1>Bienvenue sur la page de bières</h1>
+    <p>Consultez la console pour voir les données des bières récupérées depuis l'API Punk.</p>
+
+    <!-- Barre de recherche -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher une bière par nom ou description...">
+        <button id="clear-search">✕ Effacer</button>
+    </div>
+
+    <!-- Controls de pagination (ne modifie pas l'appel fetch initial) -->
+    <div id="pagination-controls">
+        <button id="prev-btn" disabled>← Précédent</button>
+        <span id="page-info">Page <span id="current-page">1</span></span>
+        <button id="next-btn">Suivant →</button>
+        <select id="per-page-select">
+            <option value="10" selected>10 par page</option>
+            <option value="20">20 par page</option>
+            <option value="30">30 par page</option>
+            <option value="100">100 par page</option>
+        </select>
+    </div>
+
+    <div id="beer-list">
+        <ul>
+        </ul>
+    </div>
+</body>
+
+<script src="app.js">
+</script>
+</html>

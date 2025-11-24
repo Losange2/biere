@@ -1,0 +1,353 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* En-tête */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body > p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+nav a {
+    padding: 12px 24px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav a:active {
+    transform: translateY(0);
+}
+
+/* Formulaire d'ajout de bière */
+#add-beer-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-beer-form label {
+    display: block;
+    color: #667eea;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+#add-beer-form input[type="text"],
+#add-beer-form input[type="url"],
+#add-beer-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#add-beer-form input[type="text"]:focus,
+#add-beer-form input[type="url"]:focus,
+#add-beer-form textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+#add-beer-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#add-beer-form input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-beer-form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#add-beer-form input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Barre de recherche */
+#search-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#clear-search {
+    padding: 12px 20px;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #667eea;
+    font-weight: 600;
+}
+
+#clear-search:hover {
+    background: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+#clear-search:active {
+    transform: translateY(0);
+}
+
+/* Contrôles de pagination */
+#pagination-controls {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+#pagination-controls button {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #667eea;
+}
+
+#pagination-controls button:hover:not(:disabled) {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#pagination-controls button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+#pagination-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#page-info {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+#current-page {
+    color: #ffd700;
+    font-weight: 700;
+}
+
+#per-page-select {
+    padding: 10px 15px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #667eea;
+}
+
+#per-page-select:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+#per-page-select:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur principal */
+#beer-list {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+#beer-list > ul {
+    display: none; /* Masquer le <ul> vide */
+}
+
+/* Carte de bière */
+#beer-list > div {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#beer-list > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte dans les cartes */
+#beer-list > div {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Images */
+#beer-list img {
+    align-self: center;
+    max-width: 80px !important;
+    max-height: 200px;
+    object-fit: contain;
+    margin: 10px 0 !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Message d'erreur */
+div[style*="color:red"],
+div[style*="color: red"] {
+    background: #fee;
+    border: 2px solid #c00;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #beer-list {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #beer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Animation de chargement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#beer-list > div {
+    animation: fadeIn 0.5s ease forwards;
+}

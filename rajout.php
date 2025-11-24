@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Bières</title>
+    <link rel="stylesheet" href="style.css">
+    <nav>
+        <a href="index.php">Accueil</a>
+        <a href="rajout.php">Rajout de bières</a>
+    </nav>
+</head>
+<body>
+    <h1>Ajouter une nouvelle bière</h1>
+    <form id="add-beer-form">
+        <label for="beer-name">Nom de la bière:</label><br>
+        <input type="text" id="beer-name" name="beer-name" required><br><br>
+
+        <label for="beer-description">Description:</label><br>
+        <textarea id="beer-description" name="beer-description" required></textarea><br><br>
+
+        <label for="beer-image-url">URL de l'image:</label><br>
+        <input type="url" id="beer-image-url" name="beer-image-url"><br><br>
+
+        <input type="submit" value="Ajouter la bière">
+    </form>
+
+    
+</body>
+
+<script src="ajout.js"></script>
+<script>
+    document.getElementById('add-beer-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        addBeerFromInput();
+    });
+</script>
+</html>
